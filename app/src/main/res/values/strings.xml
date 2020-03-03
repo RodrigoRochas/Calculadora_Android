@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CALCULADORA DE IMC</string>
+
+    <string name="dica_imc"> O processo utilizado para dterminar o execesso de peso éatraves do calculo de IMC </string>
+</resources>

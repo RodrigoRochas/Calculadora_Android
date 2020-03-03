@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="24dp"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text=" Confira seu IMC agora"
+                android:textSize="24dp"
+                android:textColor="@color/colorSecundaryText"
+
+                android:layout_marginBottom="16dp"
+                android:background="#462167F3"
+                android:padding="8dp"
+
+
+                >
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:layout_weight="1"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/edit_text_peso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint="Digite seu peso"
+                        android:textSize="32dp"
+                        android:textStyle="italic"
+
+                        android:inputType="numberDecimal"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:layout_width="39dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+
+                    android:layout_marginRight="26dp"
+                    android:src="@drawable/peso"
+
+                    >
+
+
+                </ImageView>
+
+            </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColorHint="@color/colorPrimaryDark"
+                   >
+
+                   <EditText
+                       android:id="@+id/edit_text_altura"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="16dp"
+                       android:layout_marginRight="16dp"
+                       android:hint="Digite sua altura"
+                       android:inputType="numberDecimal"
+
+                       android:textSize="32dp"
+                       android:textStyle="italic" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/peso"
+
+
+                   >
+
+               </ImageView>
+           </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+
+                android:id="@+id/button_calcular"
+                android:src="@drawable/ic_enviar"
+                android:background="@drawable/botao_circular"
+
+                android:text="Calcular"
+                android:textSize="20dp"
+
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:contentPadding="16dp"
+        app:cardCornerRadius="16dp"
+
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/dica_imc"
+            android:textSize="24sp"
+            android:textColor="@color/colorAccent"
+            android:padding="8dp"
+            >
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+</LinearLayout>
